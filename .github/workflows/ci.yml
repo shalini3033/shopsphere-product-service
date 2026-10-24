@@ -53,3 +53,6 @@ jobs:
           SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5432/shopsphere_product
           SPRING_DATASOURCE_USERNAME: postgres
           SPRING_DATASOURCE_PASSWORD: testpassword
+      
+      - name: Build Docker image
+        run: docker build -t shopsphere-product-service:ci .
